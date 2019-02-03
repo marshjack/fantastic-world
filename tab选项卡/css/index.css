@@ -1,0 +1,72 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+#tab {
+	width: 498px;
+	height: 120px;
+	border: 1px solid #000;
+	margin: 100px auto;
+}
+#tab_header{
+	height: 28px;
+	line-height: 28px;
+	background-color: #e8e8e8;
+}
+
+/* 头部 */
+#tab_header ul {
+	width: 500px;
+	/* display: flex;
+	justify-content: space-around;
+	align-items: center; */
+}
+#tab_header ul li{
+	width: 98px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	border-bottom: 1px solid #ccc;
+	padding:  0 1px;
+}
+#tab_header ul li.selected{
+	background-color: #fff;
+	border-bottom: 0;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 0;
+}
+#tab_header ul li:nth-child(1){
+	border-left: none;
+}
+#tab_header ul li:nth-last-child{
+	border-right: none;
+}
+#tab_header ul li:hover{
+	color: orangered;
+	font-weight: bolder;
+}
+
+/* 内容 */
+#tab_con{
+}
+#tab_con .dom{
+	padding-top: 20px;
+	display: none;
+}
+#tab_con .dom ul li{
+	float: left;
+	width: 220px;
+	text-align: center;
+	margin: 5px;
+}
+#tab_con .dom ul li a:hover{
+	color: orangered;
+	font-weight: bolder;
+}

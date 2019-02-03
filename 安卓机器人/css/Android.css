@@ -1,0 +1,94 @@
+@charset "utf-8";
+.android{
+	width: 334px;
+	height: 404px;
+	margin: 100px;
+}
+.android div{
+	background: #a4ca39;
+	position: relative;
+}
+.android .head{
+	top: 32px;
+	width: 220px;
+	height: 100px;
+	cursor: pointer;
+	border-radius: 110px 110px 0 0;
+}
+.android .l_eye,.android .r_eye{
+	position: absolute;
+	top: 42px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 10px;
+}
+.android .l_eye{
+	left: 50px;
+}
+.android .r_eye{
+	right: 50px;
+}
+.android .l_ant,.android .r_ant{
+	position: absolute;
+	width: 6px;
+	height: 50px;
+	top: -34px;
+	border-radius: 3px;
+}
+.android .l_ant{
+	left: 50px;
+	-webkit-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+}
+.android .r_ant{
+	right: 50px;
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+.android .body{
+	top: 40px;
+	width: 220px;
+	height: 184px;
+	border-radius: 0 0 25px 25px;
+}
+.android .l_arm,.android .r_arm,.android .l_leg,.android .r_leg{
+	position: absolute;
+	width: 50px;
+	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in;
+}
+.android .l_arm,.android .r_arm{
+	height: 150px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.android .l_leg,.android .r_leg{
+	top: 182px;
+	height: 80px;
+	border-radius: 0 0 25px 25px;
+}
+.android .l_arm{
+	left: -58px;
+}
+.android .r_arm{
+	right: -58px;
+}
+.android .l_leg{
+	left: 45px;
+}
+.android .r_leg{
+	right: 45px;
+}
+.android .head:hover{
+	-webkit-transform: rotate(-5deg) translate(-4px,-8px);
+	transform: rotate(-5deg) translate(-4px,-8px);
+}
+.android .l_arm:hover{
+	-webkit-transform: rotate(15deg) translate(-14px,0);
+	transform: rotate(15deg) translate(-14px,0);
+}
+.android .r_arm:hover{
+	-webkit-transform: rotate(-30deg) translate(30px,0);
+	transform: rotate(-30deg) translate(30px,0);
+}
